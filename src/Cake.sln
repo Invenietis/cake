@@ -34,11 +34,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{B38B35
 		..\nuspec\Cake.Common.nuspec = ..\nuspec\Cake.Common.nuspec
 		..\nuspec\Cake.Core.nuspec = ..\nuspec\Cake.Core.nuspec
 		..\nuspec\Cake.nuspec = ..\nuspec\Cake.nuspec
+		..\nuspec\Code.Cake.nuspec = ..\nuspec\Code.Cake.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8615F41E-65C7-4BE5-AFD4-C9C78912AF80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Testing", "Cake.Testing\Cake.Testing.csproj", "{5572610D-D857-450A-9CC9-F3E08B0E1449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Cake", "Code.Cake\Code.Cake.csproj", "{246BDFF0-AF13-4353-835C-2C39787339BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +77,10 @@ Global
 		{5572610D-D857-450A-9CC9-F3E08B0E1449}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5572610D-D857-450A-9CC9-F3E08B0E1449}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5572610D-D857-450A-9CC9-F3E08B0E1449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246BDFF0-AF13-4353-835C-2C39787339BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246BDFF0-AF13-4353-835C-2C39787339BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246BDFF0-AF13-4353-835C-2C39787339BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246BDFF0-AF13-4353-835C-2C39787339BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

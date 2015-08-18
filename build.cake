@@ -148,12 +148,22 @@ Task("Create-NuGet-Packages")
         OutputDirectory = nugetRoot,
         Symbols = false
     });
-
+	
     // Create Common package.
     NuGetPack("./nuspec/Cake.Common.nuspec", new NuGetPackSettings {
         Version = semVersion,
         ReleaseNotes = releaseNotes.Notes.ToArray(),
         BasePath = binDir,
+        OutputDirectory = nugetRoot,
+        Symbols = false
+    });
+
+    // Create Code.Cake package.
+	var codeCakeDir = Directory("./src/Code.Cake/bin") + Directory(configuration);
+    NuGetPack("./nuspec/Code.Cake.nuspec", new NuGetPackSettings {
+        Version = semVersion,
+        ReleaseNotes = releaseNotes.Notes.ToArray(),
+        BasePath = codeCakeDir,
         OutputDirectory = nugetRoot,
         Symbols = false
     });
